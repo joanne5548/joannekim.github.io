@@ -1,26 +1,404 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>welcome page</title>
-        <link rel="stylesheet" href="https://use.typekit.net/aii6bdf.css">
-        <link rel="stylesheet" href="index.css">
+        <title>Joanne's Website</title>
+        <link rel="stylesheet" href="https://use.typekit.net/aii6bdf.css" />
+        <link rel="stylesheet" href="index.css" />
+        <script src="https://cdn.tailwindcss.com"></script>
     </head>
-    <body>
-        <div id="grid1">
-            <div class="grid-item">
-                <img src="assets/headshot.jpg" alt="headshot" width="400">
-            </div>
-            <div class="grid-item">
-                <div id="grid2">
-                    <div class="grid-item">
-                        <h1>Joanne Kim</h1>
-                    </div>
-                    <div class="grid-item">
-                        <p>Hello! I am a senior studying Computer Science and Mathematics at University of Florida.</p>
-                    </div>
+    <body class="m-0 bg-[#F5F5F0]">
+        <div
+            class="flex flex-row justify-between pt-4 pb-4 px-16 max-w-1/2 text-xl font-semibold bg-white"
+        >
+            <!-- <a href="https://joannekim.dev#about">About</a> -->
+            <a
+                href="file:///C:/Users/joann/git/joannekim.dev/joannekim.github.io/index.html#about"
+            >
+                About
+            </a>
+            <a
+                href="file:///C:/Users/joann/git/joannekim.dev/joannekim.github.io/index.html#projects"
+            >
+                Projects
+            </a>
+            <a
+                href="file:///C:/Users/joann/git/joannekim.dev/joannekim.github.io/index.html#experiences"
+            >
+                Experiences
+            </a>
+            <a
+                href="file:///C:/Users/joann/git/joannekim.dev/joannekim.github.io/index.html#contacts"
+            >
+                Contacts
+            </a>
+        </div>
 
+        <div
+            id="about"
+            class="flex flex-row gap-8 w-full px-12 pb-6 pt-4 justify-center bg-white"
+        >
+            <div class="flex flex-col gap-4">
+                <img
+                    src="assets/headshot-square.jpg"
+                    alt="headshot"
+                    class="w-80 object-cover rounded-xl"
+                />
+                <div class="flex flex-col gap-2 font-medium">
+                    <div class="flex flex-row justify-between items-center">
+                        <div class="text-[1.2rem]">University of Florida</div>
+                        <div>May 2025</div>
+                    </div>
+                    <div>Bachelor of Science, Computer Science</div>
+                    <div>Bachelor of Science, Mathematics</div>
+                </div>
+            </div>
+            <div class="flex flex-col py-2 gap-8 font-medium w-1/2">
+                <div>
+                    <div class="flex flex-row gap-3 items-end mb-4">
+                        <div class="text-5xl font-bold mr-2">Joanne Kim</div>
+                        <a
+                            href="https://github.com/joanne5548"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <img
+                                src="./assets/github.png"
+                                alt="github"
+                                class="size-8"
+                            />
+                        </a>
+                        <a
+                            href="https://www.linkedin.com/in/jkim0328"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <img
+                                src="./assets/linkedin.png"
+                                alt="github"
+                                class="size-8"
+                            />
+                        </a>
+                    </div>
+                    <div class="">Gainesville, FL</div>
+                </div>
+                <div class="text-lg">
+                    Hello! I am a senior at University of Florida, studying
+                    Computer Science and Mathematics. I am familiar with
+                    full-stack development in TypeScript/JavaScript and Python
+                    with React and Django, and I'm comfortable coding in C++ and
+                    Java. I have experience with deployment through Google Cloud
+                    Platform using docker. I also conducted research in
+                    biomedical lab using deep learning. In my free time, I enjoy
+                    playing piano and go for rock climbing.
                 </div>
             </div>
         </div>
+
+        <div id="projects" class="justify-items-center py-8">
+            <div class="flex flex-col gap-6 font-medium w-[62rem]">
+                <div class="text-4xl font-bold">Projects</div>
+                <div class="flex flex-row flex-wrap gap-4">
+                    <div
+                        class="flex flex-col gap-2 w-[45%] p-6 rounded-xl bg-white"
+                    >
+                        <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href="https://parkmark.joannekim.dev"
+                        >
+                            <img
+                                src="./assets/parkmark-frontpage.png"
+                                alt="parkmark"
+                                class="w-88 self-center rounded-xl"
+                            />
+                        </a>
+                        <div class="flex flex-row justify-between items-center">
+                            <a
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                href="https://parkmark.joannekim.dev"
+                                class="pb-1 text-black text-xl font-semibold no-underline hover:underline"
+                            >
+                                ParkMark
+                            </a>
+                            <a
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                href="https://github.com/joanne5548/parkmark"
+                            >
+                                <img
+                                    src="./assets/github.png"
+                                    alt="github"
+                                    class="size-6 rounded-xl"
+                                />
+                            </a>
+                        </div>
+                        <div class="flex flex-row gap-2 pb-1">
+                            <div
+                                class="bg-black text-white text-sm rounded-2xl px-2 py-1"
+                            >
+                                React
+                            </div>
+                            <div
+                                class="bg-black text-white text-sm rounded-2xl px-2 py-1"
+                            >
+                                Express.js
+                            </div>
+                            <div
+                                class="bg-black text-white text-sm rounded-2xl px-2 py-1"
+                            >
+                                PostgreSQL
+                            </div>
+                        </div>
+                        ParkMark is an open source rating platform for U.S.
+                        national parks with interactive Mapbox interface. Easy
+                        logins are available through Google OAuth.
+                    </div>
+                    <div
+                        class="flex flex-col gap-2 w-[45%] p-6 rounded-xl bg-white"
+                    >
+                        <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href="https://github.com/joanne5548/raytracer"
+                        >
+                            <img
+                                src="./assets/raytracer.png"
+                                alt="parkmark"
+                                class="w-88 self-center rounded-xl"
+                            />
+                        </a>
+                        <div
+                            class="flex flex-row justify-between items-center pb-1"
+                        >
+                            <a
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                href="https://github.com/joanne5548/raytracer"
+                                class="text-black text-xl font-semibold no-underline hover:underline"
+                            >
+                                Ray Tracer
+                            </a>
+                            <a
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                href="https://github.com/joanne5548/raytracer"
+                            >
+                                <img
+                                    src="./assets/github.png"
+                                    alt="github"
+                                    class="size-6 rounded-xl"
+                                />
+                            </a>
+                        </div>
+                        <div class="flex flex-row gap-2 pb-1">
+                            <div
+                                class="bg-black text-white text-sm rounded-2xl px-2 py-1"
+                            >
+                                C++
+                            </div>
+                        </div>
+                        Ray Tracer uses linear algebra and computer graphics
+                        concepts to render objects as an image in ppm format.
+                    </div>
+                    <div
+                        class="flex flex-col gap-2 w-[45%] p-6 rounded-xl bg-white"
+                    >
+                        <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href="https://wiki.joannekim.dev/"
+                        >
+                            <img
+                                src="./assets/wiki.png"
+                                alt="parkmark"
+                                class="w-88 self-center rounded-xl"
+                            />
+                        </a>
+                        <div
+                            class="flex flex-row justify-between items-center pb-1"
+                        >
+                            <a
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                href="https://wiki.joannekim.dev/"
+                                class="text-black text-xl font-semibold no-underline hover:underline"
+                            >
+                                Kim's Wiki
+                            </a>
+                            <a
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                href="https://github.com/joanne5548/wiki"
+                            >
+                                <img
+                                    src="./assets/github.png"
+                                    alt="github"
+                                    class="size-6 rounded-xl"
+                                />
+                            </a>
+                        </div>
+                        <div class="flex flex-row gap-2 pb-1">
+                            <div
+                                class="bg-black text-white text-sm rounded-2xl px-2 py-1"
+                            >
+                                Django
+                            </div>
+                            <div
+                                class="bg-black text-white text-sm rounded-2xl px-2 py-1"
+                            >
+                                Python
+                            </div>
+                        </div>
+                        Kim's Wiki contains list of useful knowledges for web
+                        development or any other sources. Anyone can create or
+                        edit pages, written and rendered in markdown format.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="justify-items-center">
+            <div
+                id="experiences"
+                class="flex flex-col gap-8 font-medium w-[62rem] mt-8 py-8"
+            >
+                <div class="text-4xl font-bold">Experiences</div>
+                <div class="flex flex-col gap-8">
+                    <div
+                        class="flex flex-col gap-2 w-full p-6 bg-white rounded-xl"
+                    >
+                        <!-- <div class="flex flex-row justify-between">
+                        <div class="text-xl font-semibold">Bank of America</div>
+                        <div>Jun 2024 - Aug 2024</div>
+                    </div>
+                    <div class="flex flex-row justify-between">
+                        <div>Data Management Intern</div>
+                        <div>Dallas, TX</div>
+                    </div> -->
+                        <div class="text-xl font-semibold">Bank of America</div>
+                        <div class="flex flex-row gap-4">
+                            <div>Data Management Intern</div>
+                            |
+                            <div>Dallas, TX</div>
+                            |
+                            <div>Jun 2024 - Aug 2024</div>
+                        </div>
+                        <div class="flex flex-col gap-2 pl-6">
+                            <div>
+                                • Work in the permission access management team
+                                to automatically identify toxic combinations
+                                posing security risks
+                            </div>
+                            <div>
+                                • Monitor user access violations of internal
+                                applications and raise issues to app managers to
+                                remediate data vulnerabilities
+                            </div>
+                            <div>
+                                • Partner with project managers to formulate
+                                annual risk assessments with business
+                                specialists of individual risk areas
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="flex flex-col gap-2 w-full p-6 bg-white rounded-xl"
+                    >
+                        <div class="text-xl font-semibold">
+                            University of Florida, College of Veterinary
+                            Medicine
+                        </div>
+                        <div class="flex flex-row gap-4">
+                            <div>Machine Learning Research Assistant</div>
+                            |
+                            <div>Prof. Jon Kim</div>
+                            |
+                            <div>Mar 2023 - Dec 2024</div>
+                        </div>
+                        <div class="flex flex-col gap-2 pl-6">
+                            <div>
+                                • Co-author “Deep Learning-Assisted Canine
+                                Lymphoma Classification” submitted to Veterinary
+                                Clinical Pathology
+                            </div>
+                            <div>
+                                • Write PyTorch model & preprocessing code to
+                                diagnose lymphoma in ∼1000 images with
+                                Convolutional Neural Networks
+                            </div>
+                            <div>
+                                • Identify tumor biomarkers by training
+                                classification models and using statistical
+                                feature selection methods in scikit-learn
+                            </div>
+                            <div>
+                                • Leverage high-performance computing for
+                                large-scale data processing and optimize model
+                                training in medical domains
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="flex flex-col gap-2 w-full p-6 bg-white rounded-xl"
+                    >
+                        <div class="text-xl font-semibold">
+                            University of Florida, College of Veterinary
+                            Medicine
+                        </div>
+                        <div class="flex flex-row gap-4">
+                            <div>Machine Learning Research Assistant</div>
+                            |
+                            <div>Prof. Jon Kim</div>
+                            |
+                            <div>Mar 2023 - Dec 2024</div>
+                        </div>
+                        <div class="flex flex-col gap-2 pl-6">
+                            <div>
+                                • Co-author "Deep Learning-Assisted Canine
+                                Lymphoma Classification" submitted to Veterinary
+                                Clinical Pathology
+                            </div>
+                            <div>
+                                • Write PyTorch model & preprocessing code to
+                                diagnose lymphoma in ~1000 images with
+                                Convolutional Neural Networks
+                            </div>
+                            <div>
+                                • Identify tumor biomarkers by training
+                                classification models and using statistical
+                                feature selection methods in scikit-learn
+                            </div>
+                            <div>
+                                • Leverage high-performance computing for
+                                large-scale data processing and optimize model
+                                training in medical domains
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="contacts" class="justify-items-center">
+            <div class="flex flex-col gap-4 font-medium w-[62rem] mt-8 py-8">
+                <div class="text-4xl font-bold">Contacts</div>
+                <div>
+                    Best way to get in touch with me is through email:
+                    <span>
+                        <a
+                            href="mailto:joanne.kim0328@gmail.com"
+                            class="text-black no-underline hover:underline"
+                        >
+                            joanne.kim0328@gmail.com
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-black text-white"></div>
     </body>
 </html>
