@@ -8,52 +8,77 @@
     </head>
     <body class="m-0 bg-[#F5F5F0]">
         <div
-            class="flex flex-row justify-between pt-4 pb-4 px-16 max-w-1/2 text-xl font-semibold bg-white"
+            class="flex justify-center py-4 px-4 text-lg sm:text-xl font-semibold bg-white"
         >
-            <!-- <a href="https://joannekim.dev#about">About</a> -->
-            <a href="https://joanne5548.github.io/joannekim.github.io/#about">
-                About
-            </a>
-            <a
-                href="https://joanne5548.github.io/joannekim.github.io/#projects"
-            >
-                Projects
-            </a>
-            <a
-                href="https://joanne5548.github.io/joannekim.github.io/#experiences"
-            >
-                Experiences
-            </a>
-            <a
-                href="https://joanne5548.github.io/joannekim.github.io/#contacts"
-            >
-                Contacts
-            </a>
+            <div class="flex flex-row justify-between w-full sm:w-3/4 max-w-[60rem]">
+                <a
+                    href="https://joanne5548.github.io/joannekim.github.io/#about"
+                >
+                    About
+                </a>
+                <a
+                    href="https://joanne5548.github.io/joannekim.github.io/#projects"
+                >
+                    Projects
+                </a>
+                <a
+                    href="https://joanne5548.github.io/joannekim.github.io/#experiences"
+                >
+                    Experiences
+                </a>
+                <a
+                    href="https://joanne5548.github.io/joannekim.github.io/#contacts"
+                >
+                    Contacts
+                </a>
+            </div>
         </div>
 
         <div
             id="about"
-            class="flex flex-row gap-8 w-full px-12 pb-6 pt-4 justify-center bg-white"
+            class="flex flex-row gap-4 sm:gap-8 w-full px-4 sm:px-12 pb-6 sm:pt-4 justify-center bg-white"
         >
             <div class="flex flex-col gap-4">
                 <img
                     src="assets/headshot-square.jpg"
                     alt="headshot"
-                    class="w-80 object-cover rounded-xl"
+                    class="w-40 sm:w-80 object-cover rounded-xl"
                 />
                 <div class="flex flex-col gap-2 font-medium">
-                    <div class="flex flex-row justify-between items-center">
-                        <div class="text-[1.2rem]">University of Florida</div>
-                        <div>May 2025</div>
+                    <div
+                        class="flex flex-col sm:flex-row sm:justify-between sm:items-center"
+                    >
+                        <div
+                            class="text-sm font-semibold sm:font-base sm:text-[1.2rem]"
+                        >
+                            University of Florida
+                        </div>
+                        <div class="text-sm sm:text-base">May 2025</div>
                     </div>
-                    <div>Bachelor of Science, Computer Science</div>
-                    <div>Bachelor of Science, Mathematics</div>
+                    <div class="text-sm sm:text-base">
+                        <span class="block sm:hidden"
+                            >B.S., Computer Science</span
+                        >
+                        <span class="hidden sm:block"
+                            >Bachelor of Science, Computer Science</span
+                        >
+                    </div>
+                    <div class="text-sm sm:text-base">
+                        <span class="block sm:hidden">B.S., Mathematics</span>
+                        <span class="hidden sm:block"
+                            >Bachelor of Science, Mathematics</span
+                        >
+                    </div>
                 </div>
             </div>
-            <div class="flex flex-col py-2 gap-6 font-medium w-1/2">
-                <div>
-                    <div class="flex flex-row gap-3 items-end mb-4">
-                        <div class="text-5xl font-bold mr-2">Joanne Kim</div>
+            <div class="flex flex-col py-2 gap-2 sm:gap-4 font-medium w-1/2">
+                <div
+                    class="flex flex-col sm:flex-row gap-2 sm:gap-5 sm:items-end"
+                >
+                    <div class="text-3xl sm:text-4xl md:text-5xl font-bold">
+                        Joanne Kim
+                    </div>
+                    <div class="flex flex-row gap-3">
                         <a
                             href="https://github.com/joanne5548"
                             target="_blank"
@@ -62,7 +87,7 @@
                             <img
                                 src="./assets/github.png"
                                 alt="github"
-                                class="size-8"
+                                class="size-6 md:size-8"
                             />
                         </a>
                         <a
@@ -73,21 +98,22 @@
                             <img
                                 src="./assets/linkedin-black.png"
                                 alt="github"
-                                class="size-8"
+                                class="size-6 md:size-8"
                             />
                         </a>
                     </div>
-                    <div class="">Gainesville, FL</div>
                 </div>
-                <div class="text-lg">
-                    Hello! I am a senior at University of Florida, studying
-                    Computer Science and Mathematics. I am familiar with
-                    full-stack development in TypeScript/JavaScript and Python
-                    with React and Django, and I'm comfortable coding in C++ and
-                    Java. I have experience with deployment through Google Cloud
-                    Platform using docker. I also conducted research in
-                    biomedical lab using deep learning. In my free time, I enjoy
-                    playing piano and go for rock climbing.
+                <div>Gainesville, FL</div>
+                <div class="text-base sm:text-lg">
+                    Welcome, I'm Joanne! I'm in my final year of CS & Math at
+                    University of Florida. I previously interned at Bank of
+                    America and GE Appliances in security risk management and
+                    embedded software engineering. I also worked in biomedical
+                    lab at UF for cancer detection with computer vision. I'm
+                    familiar with full-stack web development with React and
+                    Django, using TypeScript and Python. I also enjoy working in
+                    C++ and Java. In my free time, I like to play piano or go
+                    for rock climbing.
                 </div>
                 <a
                     target="_black"
@@ -95,17 +121,18 @@
                     download="Joanne Kim Resume"
                     class="px-4 py-2 text-white bg-black rounded-xl w-fit hover:bg-slate-600"
                 >
-                    Download Resume
+                    <span class="hidden sm:block">Download Resume</span>
+                    <span class="block sm:hidden">Resume</span>
                 </a>
             </div>
         </div>
 
         <div id="projects" class="justify-items-center py-8">
-            <div class="flex flex-col gap-6 font-medium w-[62rem]">
-                <div class="text-4xl font-bold">Projects</div>
+            <div class="flex flex-col gap-6 font-medium w-4/5 sm:max-w-[62rem]">
+                <div class="text-3xl sm:text-4xl font-bold">Projects</div>
                 <div class="flex flex-row flex-wrap gap-4">
                     <div
-                        class="flex flex-col gap-2 w-[45%] p-6 rounded-xl bg-white shadow-lg"
+                        class="flex flex-col gap-2 w-full sm:w-[45%] p-4 sm:p-6 rounded-xl bg-white shadow-lg"
                     >
                         <a
                             target="_blank"
@@ -139,7 +166,7 @@
                                 />
                             </a>
                         </div>
-                        <div class="flex flex-row gap-2 pb-1">
+                        <div class="flex flex-row gap-2 pb-1 flex-wrap">
                             <div
                                 class="bg-black text-white text-sm rounded-2xl px-2 py-1"
                             >
@@ -161,7 +188,7 @@
                         logins are available through Google OAuth.
                     </div>
                     <div
-                        class="flex flex-col gap-2 w-[45%] p-6 rounded-xl bg-white shadow-lg"
+                        class="flex flex-col gap-2 w-full sm:w-[45%] p-4 sm:p-6 rounded-xl bg-white shadow-lg"
                     >
                         <a
                             target="_blank"
@@ -208,7 +235,7 @@
                         concepts to render objects as an image in ppm format.
                     </div>
                     <div
-                        class="flex flex-col gap-2 w-[45%] p-6 rounded-xl bg-white shadow-lg"
+                        class="flex flex-col gap-2 w-full sm:w-[45%] p-4 sm:p-6 rounded-xl bg-white shadow-lg"
                     >
                         <a
                             target="_blank"
@@ -267,12 +294,12 @@
         <div class="justify-items-center">
             <div
                 id="experiences"
-                class="flex flex-col gap-8 font-medium w-[62rem] mt-8 py-8"
+                class="flex flex-col gap-8 font-medium w-4/5 sm:max-w-[62rem] mt-8 py-8"
             >
-                <div class="text-4xl font-bold">Experiences</div>
+                <div class="text-3xl sm:text-4xl font-bold">Experiences</div>
                 <div class="flex flex-col gap-8">
                     <div
-                        class="flex flex-col gap-2 w-full p-6 bg-white rounded-xl shadow-lg"
+                        class="flex flex-col gap-2 w-full px-6 py-4 sm:py-6 bg-white rounded-xl shadow-lg"
                     >
                         <!-- <div class="flex flex-row justify-between">
                         <div class="text-xl font-semibold">Bank of America</div>
@@ -283,14 +310,19 @@
                         <div>Dallas, TX</div>
                     </div> -->
                         <div class="text-xl font-semibold">Bank of America</div>
-                        <div class="flex flex-row gap-4">
+                        <div class="flex flex-col gap-1 mb-1 sm:hidden">
+                            <div>Data Management Intern</div>
+                            <div>Jun 2024 - Aug 2024</div>
+                            <div>Dallas, TX</div>
+                        </div>
+                        <div class="hidden sm:flex sm:flex-row sm:gap-4">
                             <div>Data Management Intern</div>
                             |
                             <div>Dallas, TX</div>
                             |
                             <div>Jun 2024 - Aug 2024</div>
                         </div>
-                        <div class="flex flex-col gap-2 pl-6">
+                        <div class="flex flex-col gap-2 pl-3 sm:pl-6">
                             <div>
                                 • Work in the permission access management team
                                 to automatically identify toxic combinations
@@ -315,14 +347,19 @@
                         <div class="text-xl font-semibold">
                             GE Appliances, a Haier company
                         </div>
-                        <div class="flex flex-row gap-4">
+                        <div class="flex flex-col gap-1 mb-1 sm:hidden">
+                            <div>Software Engineering Co-op</div>
+                            <div>Jan 2024 - May 2024</div>
+                            <div>Louisville, KY</div>
+                        </div>
+                        <div class="hidden sm:flex sm:flex-row sm:gap-4">
                             <div>Software Engineering Co-op</div>
                             |
                             <div>Louisville, KY</div>
                             |
                             <div>Jan 2024 - May 2024</div>
                         </div>
-                        <div class="flex flex-col gap-2 pl-6">
+                        <div class="flex flex-col gap-2 pl-3 sm:pl-6">
                             <div>
                                 • Utilize object-oriented C to implement the LED
                                 oven Sabbath Mode feature for the production
@@ -353,14 +390,19 @@
                             University of Florida, College of Veterinary
                             Medicine
                         </div>
-                        <div class="flex flex-row gap-4">
+                        <div class="flex flex-col gap-1 mb-1 sm:hidden">
+                            <div>Machine Learning Research Assistant</div>
+                            <div>Mar 2023 - Dec 2024</div>
+                            <div>Prof. Jon Kim</div>
+                        </div>
+                        <div class="hidden sm:flex sm:flex-row sm:gap-4">
                             <div>Machine Learning Research Assistant</div>
                             |
                             <div>Prof. Jon Kim</div>
                             |
                             <div>Mar 2023 - Dec 2024</div>
                         </div>
-                        <div class="flex flex-col gap-2 pl-6">
+                        <div class="flex flex-col gap-2 pl-3 sm:pl-6">
                             <div>
                                 • Co-author “Deep Learning-Assisted Canine
                                 Lymphoma Classification” submitted to Veterinary
@@ -388,7 +430,9 @@
         </div>
 
         <div id="contacts" class="justify-items-center">
-            <div class="flex flex-col gap-4 font-medium w-[62rem] my-8 py-8">
+            <div
+                class="flex flex-col gap-4 font-medium w-4/5 sm:max-w-[62rem] my-8 py-8"
+            >
                 <div class="text-4xl font-bold">Contacts</div>
                 <div>
                     Best way to get in touch with me is through email:
@@ -405,7 +449,7 @@
         </div>
 
         <div
-            class="flex flex-col gap-4 items-center bg-slate-950 text-zinc-600 py-32"
+            class="flex flex-col gap-4 items-center bg-slate-950 text-zinc-600 py-16 sm:py-24 md:py-32"
         >
             Copyright © Joanne Kim
             <div class="flex flex-row gap-4 w-fit">

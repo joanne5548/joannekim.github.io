@@ -4,13 +4,12 @@
 
 ### Layouts
 
--   [ ] Add download resume
--   [ ] Add the footer
--   [ ] Fix navbar expanding too widely on big screen
+-   [x] Add download resume
+-   [x] Add the footer
+-   [x] Add responsive design
+-   [x] Fix navbar expanding too widely on big screen
 
 ### Contents
 
 -   [ ] Polish introduction
 -   [ ] Edit projects list
--   [ ] Include created this website in the experience
-
