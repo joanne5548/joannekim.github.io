@@ -32,26 +32,26 @@
 
         <div
             id="about"
-            class="flex flex-row gap-4 sm:gap-8 w-full px-4 sm:px-12 pb-6 sm:pt-4 justify-center bg-white"
+            class="flex flex-col sm:flex-row gap-0 sm:gap-8 w-full px-4 sm:px-12 pb-6 sm:pt-4 justify-center bg-white"
         >
-            <div class="flex flex-col gap-4">
+            <div class="flex flex-col items-center sm:items-start gap-4">
                 <img
                     src="assets/headshot-square.jpg"
                     alt="headshot"
-                    class="w-40 sm:w-80 object-cover rounded-xl"
+                    class="w-60 sm:w-80 object-cover rounded-xl"
                 />
-                <div class="flex flex-col gap-2 font-medium">
+                <div class="hidden sm:block flex flex-col gap-2 font-medium sm:w-full">
                     <div
-                        class="flex flex-col sm:flex-row sm:justify-between sm:items-center"
+                        class="flex flex-col w-full sm:flex-row sm:justify-between sm:items-center"
                     >
                         <div
-                            class="text-sm font-semibold sm:font-base sm:text-[1.2rem]"
+                            class="font-semibold sm:font-base text-[1.2rem]"
                         >
                             University of Florida
                         </div>
-                        <div class="text-sm sm:text-base">May 2025</div>
+                        <div class="text-base sm:self-end">May 2025</div>
                     </div>
-                    <div class="text-sm sm:text-base">
+                    <div class="text-base">
                         <span class="block sm:hidden"
                             >B.S., Computer Science</span
                         >
@@ -59,7 +59,7 @@
                             >Bachelor of Science, Computer Science</span
                         >
                     </div>
-                    <div class="text-sm sm:text-base">
+                    <div class="text-base">
                         <span class="block sm:hidden">B.S., Mathematics</span>
                         <span class="hidden sm:block"
                             >Bachelor of Science, Mathematics</span
@@ -67,14 +67,14 @@
                     </div>
                 </div>
             </div>
-            <div class="flex flex-col py-2 gap-2 sm:gap-4 font-medium w-1/2">
+            <div class="flex flex-col py-2 gap-2 sm:gap-4 font-medium w-full sm:w-1/2">
                 <div
-                    class="flex flex-col sm:flex-row gap-2 sm:gap-5 sm:items-end"
+                    class="flex flex-row gap-2 sm:gap-5 justify-center sm:justify-start items-end"
                 >
                     <div class="text-3xl sm:text-4xl md:text-5xl font-bold">
                         Joanne Kim
                     </div>
-                    <div class="flex flex-row gap-3">
+                    <div class="flex flex-row gap-3 self-end">
                         <a
                             href="https://github.com/joanne5548"
                             target="_blank"
@@ -99,17 +99,46 @@
                         </a>
                     </div>
                 </div>
-                <div>Gainesville, FL</div>
+                <div class="sm:hidden self-center flex flex-col gap-1 w-11/12 font-medium">
+                    <div
+                        class="flex flex-row justify-between w-full"
+                    >
+                        <div
+                            class="font-semibold text-[1.2rem]"
+                        >
+                            University of Florida
+                        </div>
+                        <div class="text-base self-end">May 2025</div>
+                    </div>
+                    <div class="text-base">
+                        <span class="block sm:hidden"
+                            >B.S., Computer Science</span
+                        >
+                        <span class="hidden sm:block"
+                            >Bachelor of Science, Computer Science</span
+                        >
+                    </div>
+                    <div class="text-base">
+                        <span class="block sm:hidden">B.S., Mathematics</span>
+                        <span class="hidden sm:block"
+                            >Bachelor of Science, Mathematics</span
+                        >
+                    </div>
+                    <div>Gainesville, FL</div>
+                </div>
                 <div class="text-base sm:text-lg">
                     Welcome, I'm Joanne! I'm in my final year of CS & Math at
                     University of Florida. I previously interned at Bank of
-                    America and GE Appliances in security risk management and
-                    embedded software engineering. I also worked in biomedical
-                    lab at UF for cancer detection with computer vision. I'm
-                    familiar with full-stack web development with React and
-                    Django, using TypeScript and Python. I also enjoy working in
-                    C++ and Java. In my free time, I like to play piano or go
-                    for rock climbing.
+                    America (where I worked on security risk management) and GE
+                    Appliances (where I worked on ovens). I am also a UF AI
+                    Scholar selected to work on computer vision for cancer
+                    detection.
+                </div>
+                <div class="text-base sm:text-lg mb-1 sm:mb-0">
+                    I'm familiar with full-stack web development with React
+                    and Django, using TypeScript and Python. I also enjoy
+                    working in C++ and Java. In my free time, I like to play
+                    piano or go for rock climbing.
                 </div>
                 <a
                     target="_black"

@@ -11,5 +11,5 @@
 
 ### Contents
 
--   [ ] Polish introduction
+-   [x] Polish introduction
 -   [ ] Edit projects list
